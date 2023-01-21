@@ -1,5 +1,5 @@
 # simple-java-snippets
-シンプルなJavaのスニペット集
+シンプルなJavaのコードスニペット集
 
 please note:  
 This repository has been confirmed to work with Java 17.
