@@ -1,3 +1,5 @@
+package snippets;
+
 public class LocalClassWithImplementsDemo {
     public static void main(String[] args) {
         class Local implements Runnable {

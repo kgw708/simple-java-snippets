@@ -1,3 +1,5 @@
+package snippets;
+
 public class HelloWorldWithLambda {
     public static void main(String[] args) {
         // part1

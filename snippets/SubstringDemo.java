@@ -1,3 +1,5 @@
+package snippets;
+
 public class SubstringDemo {
     public static void main(String[] args) {
         String moji = "hogefugapiyo";

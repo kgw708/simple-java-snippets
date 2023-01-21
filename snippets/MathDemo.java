@@ -1,3 +1,5 @@
+package snippets;
+
 public class MathDemo {
     public static void main(String[] args) {
         int a = 100;

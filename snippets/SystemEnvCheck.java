@@ -1,3 +1,5 @@
+package snippets;
+
 import java.util.Map;
 
 public class SystemEnvCheck {

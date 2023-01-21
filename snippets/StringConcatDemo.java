@@ -1,3 +1,5 @@
+package snippets;
+
 public class StringConcatDemo {
     public static void main(String[] args) {
         String hoge = "hoge";

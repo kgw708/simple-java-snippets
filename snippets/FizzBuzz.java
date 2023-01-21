@@ -1,3 +1,5 @@
+package snippets;
+
 /**
  * FizzBuzz問題
  * 

@@ -1,12 +1,14 @@
-public class LocalNoNameClassDemo {
+package snippets;
+
+public class LocalClassDemo {
     public static void main(String[] args) {
-        Runnable runner = new Runnable() {
-            @Override
+        class Local {
             public void run() {
                 System.out.println("Success");
             }
-        };
+        }
 
-        runner.run();
+        Local local = new Local();
+        local.run();
     }
 }
