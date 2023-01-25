@@ -22,7 +22,7 @@ public class ConstantDemo {
 
     private static final Map<String, Integer> FRUITS_MAP;
     static {
-        HashMap<String, Integer> map = new HashMap<String, Integer>();
+        Map<String, Integer> map = new HashMap<String, Integer>();
         map.put("いちご", Integer.valueOf(500));
         map.put("ぶどう", Integer.valueOf(350));
         map.put("なし", Integer.valueOf(200));
@@ -36,5 +36,9 @@ public class ConstantDemo {
         System.out.println(HOGE);
         System.out.println(BOOKS_LIST);
         System.out.println(FRUITS_MAP);
+
+        // 以下はエラーになる
+        // BOOKS_LIST.add("pictorial book");
+        // FRUITS_MAP.put("すいか", Integer.valueOf(1000));
     }
 }
