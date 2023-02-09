@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 
-public class SortWithComparatorDemo {
+public class SortWithComparatorExample {
     public static void main(String[] args) {
         ArrayList<Profile> profileList = new ArrayList<>();
 

@@ -1,6 +1,6 @@
 package snippets.classmethod;
 
-public class LocalClassWithImplementsDemo {
+public class LocalClassWithImplementsExample {
     public static void main(String[] args) {
         class Local implements Runnable {
             @Override

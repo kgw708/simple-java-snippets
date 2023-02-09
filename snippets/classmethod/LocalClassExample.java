@@ -1,6 +1,6 @@
 package snippets.classmethod;
 
-public class LocalClassDemo {
+public class LocalClassExample {
     public static void main(String[] args) {
         class Local {
             public void run() {

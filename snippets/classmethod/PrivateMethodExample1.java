@@ -1,6 +1,6 @@
 package snippets.classmethod;
 
-public class PrivateMethod1 {
+public class PrivateMethodExample1 {
     public static void main(String[] args) {
         sayGoodMorning();
         sayGoodAfternoon();

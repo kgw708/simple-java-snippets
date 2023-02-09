@@ -3,7 +3,7 @@ package snippets.classmethod;
 import java.util.Arrays;
 import java.util.List;
 
-public class InnerClassDemo {
+public class InnerClassExample {
     public static void main(String[] args) {
         List<Profile> profileList = Arrays.asList(
             new Profile("taro", 20, "baseball"),

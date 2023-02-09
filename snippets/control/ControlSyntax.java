@@ -1,15 +1,25 @@
 package snippets.control;
 
+import java.util.Arrays;
+import java.util.List;
+
 public class ControlSyntax {
     public static void main(String[] args) {
         int number = (int)(Math.random() * 100) + 1;
 
-        // for
+        // for文
         for (int i = 1; i <= number; i++) {
             System.out.println(i);
         }
 
-        // if
+        List<String> list = Arrays.asList("拡張", "for", "文");
+
+        // 拡張for文
+        for (String s : list) {
+            System.out.println(s);
+        }
+
+        // if文
         if (number > 50) {
             System.out.println("This number is larger than 50.");
         } else if (number < 50) {
@@ -18,9 +28,10 @@ public class ControlSyntax {
             System.out.println("This number is 50.");
         }
 
-        // while
+        // while文
         int len = String.valueOf(number).length();
         String result = "This number has 2 digits.";
+
         switch (len) {
           case 1:
             result = "This number has 1 digit.";
@@ -31,6 +42,7 @@ public class ControlSyntax {
           default:
             break;
         }
+
         System.out.println(result);
     }
 }
