@@ -5,7 +5,7 @@ import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class List2LinkedHashMapDemo {
+public class List2LinkedHashMapExample {
     public static void main(String[] args) {
         List<Item> itemList = Arrays.asList(
             new Item("broom", 1200, "a-company"),

@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.stream.Collectors;
 
-public class Map2StringDemo {
+public class Map2StringExample {
     public static void main(String[] args) {
         Map<String, Long> map = new HashMap<>();
         map.put("hoge", Long.valueOf(123));

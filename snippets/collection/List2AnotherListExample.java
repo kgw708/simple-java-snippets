@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class List2AnotherListDemo {
+public class List2AnotherListExample {
     public static void main(String[] args) {
         List<String> strList =
             List.of("hoge", "fuga", "piyo", "foo", "bar", "baz");

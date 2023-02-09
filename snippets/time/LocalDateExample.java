@@ -5,7 +5,7 @@ import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
 
-public class LocalDateDemo {
+public class LocalDateExample {
     public static void main(String[] args) {
         System.out.println("LocalDate: " + LocalDate.now());
         System.out.println("LocalTime: " + LocalTime.now());

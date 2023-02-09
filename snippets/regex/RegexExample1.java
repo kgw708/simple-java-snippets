@@ -5,6 +5,7 @@ import java.util.regex.Pattern;
 
 public class RegexExample1 {
     public static void main(String[] args) {
+
         // 電話番号
         String phoneNumber = "0120-1234-5678";
         Pattern p1 = Pattern.compile("\\d{2,4}-\\d{2,4}-\\d{4}");

@@ -1,8 +1,8 @@
-package snippets;
+package snippets.miniapp;
 
 import java.util.Scanner;
 
-public class Hoge {
+public class ScannerExample {
     public static void main(String[] args) {
 
         Scanner scan = new Scanner(System.in);

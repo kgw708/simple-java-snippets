@@ -6,7 +6,7 @@ import java.time.LocalTime;
 import java.time.OffsetDateTime;
 import java.time.ZonedDateTime;
 
-public class DateTimeDemo {
+public class DateTimeExample {
     public static void main(String[] args) {
         System.out.println("LocalDate.now() = " + LocalDate.now());
         System.out.println("LocalDateTime.now() = " + LocalDateTime.now());
