@@ -1,6 +1,6 @@
 package snippets.math;
 
-public class MathDemo {
+public class MathExample {
     public static void main(String[] args) {
 
         // 数値の比較 大なり/小なり

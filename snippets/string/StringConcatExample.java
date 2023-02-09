@@ -1,6 +1,6 @@
 package snippets.string;
 
-public class StringConcatDemo {
+public class StringConcatExample {
     public static void main(String[] args) {
         String hoge = "hoge";
         String fuga = "fuga";

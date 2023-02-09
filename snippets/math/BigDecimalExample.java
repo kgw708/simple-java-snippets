@@ -3,7 +3,7 @@ package snippets.math;
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 
-public class BigDecimalDemo {
+public class BigDecimalExample {
     public static void main(String[] args) {
         BigDecimal number1 = new BigDecimal("1");
         BigDecimal number2 = new BigDecimal("2");

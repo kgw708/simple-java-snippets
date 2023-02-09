@@ -1,6 +1,6 @@
 package snippets.string;
 
-public class SubstringDemo {
+public class SubstringExample {
     public static void main(String[] args) {
         String moji = "hogefugapiyo";
         System.out.println(String.format("文字列: %s", moji));

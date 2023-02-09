@@ -2,7 +2,7 @@ package snippets.swing;
 
 import javax.swing.JOptionPane;
 
-public class PopupDialog {
+public class PopupDialogExample {
     public static void main(String[] args) {
         try {
             "".charAt(0);

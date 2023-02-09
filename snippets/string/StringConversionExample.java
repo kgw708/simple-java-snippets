@@ -1,6 +1,6 @@
 package snippets.string;
 
-public class StringConversion {
+public class StringConversionExample {
     public static void main(String[] args) {
         String lower = "abc";
         System.out.println("lower to upper: " + lower.toUpperCase());
