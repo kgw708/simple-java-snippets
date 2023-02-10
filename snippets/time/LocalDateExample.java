@@ -2,18 +2,15 @@ package snippets.time;
 
 import java.time.format.DateTimeFormatter;
 import java.time.LocalDate;
-import java.time.LocalDateTime;
-import java.time.LocalTime;
 
 public class LocalDateExample {
     public static void main(String[] args) {
-        System.out.println("LocalDate: " + LocalDate.now());
-        System.out.println("LocalTime: " + LocalTime.now());
-        System.out.println("LocalDateTime: " + LocalDateTime.now());
 
-        LocalDateTime ldt = LocalDateTime.now();
-        DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
-        String formattedDate = ldt.format(dtf);
+        // 日付の整形
+        System.out.println("LocalDate: " + LocalDate.now());
+        LocalDate ld = LocalDate.now();
+        DateTimeFormatter dtf1 = DateTimeFormatter.ofPattern("MM-dd-yyyy");
+        String formattedDate = ld.format(dtf1);
         System.out.println(formattedDate);
     }
 }
