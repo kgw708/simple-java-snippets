@@ -1,0 +1,18 @@
+package snippets.file;
+
+import java.io.File;
+
+public class FileExample10 {
+    public static void main(String[] args) {
+
+        String path = "C:\\home";
+        String separator = "\\";
+        String fileName = "test.txt";
+
+        File file = new File(path + separator + fileName);
+
+        if (file.exists()) {
+            System.out.println("This file is exists.");
+        }
+    }
+}
