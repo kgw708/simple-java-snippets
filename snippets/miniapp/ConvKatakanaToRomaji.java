@@ -86,9 +86,9 @@ public class ConvKatakanaToRomaji {
         map.put("シャ", "SYA");
         map.put("シュ", "SYU");
         map.put("ショ", "SYO");
-        map.put("チャ", "TYA");
-        map.put("チュ", "TYU");
-        map.put("チョ", "TYO");
+        map.put("チャ", "CHA");
+        map.put("チュ", "CHU");
+        map.put("チョ", "CHO");
         map.put("ニャ", "NYA");
         map.put("ニュ", "NYU");
         map.put("ニョ", "NYO");
@@ -101,9 +101,9 @@ public class ConvKatakanaToRomaji {
         map.put("ギャ", "GYA");
         map.put("ギュ", "GYU");
         map.put("ギョ", "GYO");
-        map.put("ジャ", "ZYA");
-        map.put("ジュ", "ZYU");
-        map.put("ジョ", "ZYO");
+        map.put("ジャ", "JA");
+        map.put("ジュ", "JU");
+        map.put("ジョ", "JO");
         map.put("ヂャ", "DYA");
         map.put("ヂュ", "DYU");
         map.put("ヂョ", "DYO");
@@ -113,12 +113,55 @@ public class ConvKatakanaToRomaji {
         map.put("ピャ", "PYA");
         map.put("ピュ", "PYU");
         map.put("ピョ", "PYO");
+        map.put("ァ", "A");
+        map.put("ィ", "I");
+        map.put("ゥ", "U");
+        map.put("ェ", "E");
+        map.put("ォ", "O");
         map.put("ー", "-");
         KANA_ROMAJI_MAP = Collections.unmodifiableMap(map);
     }
 
     public static void main(String[] args) {
-        // TODO
-        System.out.println(KANA_ROMAJI_MAP);
+        String[] strArr = {
+            "ハンチャーハン",
+            "チャーシューメン",
+            "スパゲティーミートソース",
+            "クロワッサン",
+            "キウイフルーツ",
+            "ロイヤルミルクティー",
+            "ヘーゼルナッツ",
+            "ドヤッ"
+        };
+
+        for (String s : strArr) {
+            System.out.println(s + " -> " + kana2roma(s));
+        }
+    }
+
+    private static String kana2roma(String s) {
+        StringBuilder t = new StringBuilder();
+        for (int i = 0; i < s.length(); i++) {
+            if (i <= s.length() - 2) {
+                if (KANA_ROMAJI_MAP.containsKey(s.substring(i, i + 2))) {
+                    t.append(KANA_ROMAJI_MAP.get(s.substring(i, i + 2)));
+                    i++;
+                } else if (KANA_ROMAJI_MAP.containsKey(s.substring(i, i + 1))) {
+                    t.append(KANA_ROMAJI_MAP.get(s.substring(i, i + 1)));
+                } else if (s.charAt(i) == 'ッ') {
+                    t.append(KANA_ROMAJI_MAP.get(s.substring(i + 1, i + 2)).charAt(0));
+                } else {
+                    t.append(s.charAt(i));
+                }
+            } else {
+                if (KANA_ROMAJI_MAP.containsKey(s.substring(i, i + 1))) {
+                    t.append(KANA_ROMAJI_MAP.get(s.substring(i, i + 1)));
+                } else {
+                    // 変換せず空文字を返す
+                    t.append("");
+                }
+            }
+        }
+        return t.toString();
     }
 }
