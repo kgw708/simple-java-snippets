@@ -1,4 +1,4 @@
-package snippets.miniapp;
+package snippets.miniapp.system;
 
 import java.text.DecimalFormat;
 

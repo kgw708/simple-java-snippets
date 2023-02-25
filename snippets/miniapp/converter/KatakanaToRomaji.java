@@ -1,10 +1,10 @@
-package snippets.miniapp;
+package snippets.miniapp.converter;
 
 import java.util.Collections;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
-public class ConvKatakanaToRomaji {
+public class KatakanaToRomaji {
 
     private static final Map<String, String> KANA_ROMAJI_MAP;
     static {

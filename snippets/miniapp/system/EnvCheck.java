@@ -1,9 +1,9 @@
-package snippets.miniapp;
+package snippets.miniapp.system;
 
 import java.util.Map;
 import java.util.stream.Collectors;
 
-public class SystemEnvCheck {
+public class EnvCheck {
     public static void main(String[] args) {
         Map<String, String> map = System.getenv();
 

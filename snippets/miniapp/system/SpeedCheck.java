@@ -1,6 +1,6 @@
-package snippets.miniapp;
+package snippets.miniapp.system;
 
-public class SpeedTest {
+public class SpeedCheck {
     public static final long MOD = 1000000007;
     public static void main(String[] args) {
         long systemNanoTime = System.nanoTime();

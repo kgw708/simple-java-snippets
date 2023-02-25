@@ -1,4 +1,4 @@
-package snippets.miniapp;
+package snippets.miniapp.parser;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -29,7 +29,7 @@ public class HtmlParser {
     }
 
     public String next() {
-        StringBuffer sb = new StringBuffer();
+        StringBuilder sb = new StringBuilder();
         sb.append("string = " + tagStr + ", ");
         sb.append("tag = " + tagName);
         if (tagAttribute != "") {

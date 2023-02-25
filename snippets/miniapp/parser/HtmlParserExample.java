@@ -1,9 +1,9 @@
-package snippets.miniapp;
+package snippets.miniapp.parser;
 
 public class HtmlParserExample {
     public static void main(String[] args) {
 
-        StringBuffer sb = new StringBuffer();
+        StringBuilder sb = new StringBuilder();
         sb.append("<html>");
         sb.append("<head>");
         sb.append("<title>demo page</title>");

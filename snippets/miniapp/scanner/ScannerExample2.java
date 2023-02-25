@@ -1,4 +1,4 @@
-package snippets.miniapp;
+package snippets.miniapp.scanner;
 
 import java.util.Scanner;
 
