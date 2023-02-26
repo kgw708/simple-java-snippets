@@ -1,7 +1,7 @@
 package snippets.classmethod.clazz;
 
 public class MyClass {
-    void myMethod() {
+    public void myMethod() {
         System.out.println("Hello world with MyClass!!");
     }
 }

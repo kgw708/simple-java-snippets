@@ -28,7 +28,7 @@ public class ControlSyntax {
             System.out.println("This number is 50.");
         }
 
-        // while文
+        // switch文
         int len = String.valueOf(number).length();
         String result = "This number has 2 digits.";
 
