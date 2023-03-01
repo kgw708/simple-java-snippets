@@ -1,19 +1,17 @@
 package snippets.exception;
 
-public class NullPointerExceptionDemo {
+public class NumberFormatExceptionDemo {
     public static void main(String[] args) {
         try {
-            String str = null;
-            System.out.println(str.length());
+            int i = Integer.parseInt("a");
+            System.out.println(i);
         } catch (Exception e) {
             e.printStackTrace();
         }
 
         try {
-            String str = null;
-            if (str == null) {
-                System.out.println("Its not null.");
-            }            
+            int i = Integer.parseInt("a", 16);
+            System.out.println(i);
         } catch (Exception e) {
             e.printStackTrace();
         }
