@@ -3,7 +3,7 @@ package snippets.time;
 import java.time.format.DateTimeFormatter;
 import java.time.LocalDate;
 
-public class LocalDateExample {
+public class LocalDateExample1 {
     public static void main(String[] args) {
 
         // 日付の整形
