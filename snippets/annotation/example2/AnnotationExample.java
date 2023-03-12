@@ -1,4 +1,4 @@
-package snippets.diy;
+package snippets.annotation.example2;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Field;
@@ -9,7 +9,7 @@ public class AnnotationExample {
     public static void main(String[] args) throws ClassNotFoundException, NoSuchFieldException, NoSuchMethodException, SecurityException {
 
         // クラスに付与したアノテーションの取得
-        Class<?> clazz = Class.forName("snippets.diy.AnnotationDemo");
+        Class<?> clazz = Class.forName("snippets.annotation.example2.AnnotationDemo");
         MyAnnotation myClass = (MyAnnotation) clazz.getAnnotation(MyAnnotation.class);
         System.out.println("Class : name = " + myClass.name() + ", value = " + myClass.value());
 

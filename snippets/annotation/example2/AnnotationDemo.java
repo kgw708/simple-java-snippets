@@ -1,4 +1,4 @@
-package snippets.diy;
+package snippets.annotation.example2;
 
 // 自作したアノテーションを付与するためのクラス
 // クラスにアノテーション付与するパターン
